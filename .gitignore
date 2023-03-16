@@ -1,0 +1,10 @@
+
+a1/a1
+a2/a2
+a3/a3
+a1/test_root/*
+a3/test_root/*
+*.pyc
+*.zip
+.idea/*
+.vscode/*
