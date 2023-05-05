@@ -1,0 +1,44 @@
+execve("./a1", ["./a1", "parse", "path=test_root/7KTAI/tbNz/4ReCd/"...], 0x7ffccd6826c0 /* 56 vars */) = 0
+brk(NULL)                               = 0x56328f83f000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7fff7430b440) = -1 EINVAL (Invalid argument)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff7822a2000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=55205, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 55205, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ff782294000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\3206\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2072888, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2117488, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff782000000
+mmap(0x7ff782022000, 1544192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7ff782022000
+mmap(0x7ff78219b000, 356352, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19b000) = 0x7ff78219b000
+mmap(0x7ff7821f2000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f1000) = 0x7ff7821f2000
+mmap(0x7ff7821f8000, 53104, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff7821f8000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff782291000
+arch_prctl(ARCH_SET_FS, 0x7ff782291740) = 0
+set_tid_address(0x7ff782291a10)         = 8167
+set_robust_list(0x7ff782291a20, 24)     = 0
+rseq(0x7ff782292060, 0x20, 0, 0x53053053) = 0
+mprotect(0x7ff7821f2000, 16384, PROT_READ) = 0
+mprotect(0x56328f7ae000, 4096, PROT_READ) = 0
+mprotect(0x7ff7822d8000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7ff782294000, 55205)           = 0
+openat(AT_FDCWD, "test_root/7KTAI/tbNz/4ReCd/ubAVRWL/wuv5maYjP/mXEe3p.lpX", O_RDONLY) = 3
+lseek(3, -4, SEEK_END)                  = 10417
+read(3, "Yie8", 4)                      = 4
+newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+getrandom("\x00\xce\xf5\xc5\x97\xa6\x35\x5f", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x56328f83f000
+brk(0x56328f860000)                     = 0x56328f860000
+write(1, "SUCCES\n", 7)                 = 7
+pread64(3, "\0\0\357\0", 4, 10413)      = 4
+write(1, "ERROR\n", 6)                  = 6
+write(1, "wrong sect_nr\n", 14)         = 14
+close(3)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
