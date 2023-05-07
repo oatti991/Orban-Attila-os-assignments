@@ -40,14 +40,14 @@ void *t_func(void *arg)
     {
         info(BEGIN, s->process_no, id);
         info(END, s->process_no, id);
-
+        
     }
     pthread_exit(NULL);
 }
 
 void* t_func2(void *arg)
 {
-
+    
     TH_STRUCT *s = (TH_STRUCT *)arg;
     int id = s->thread_no;
     sem_wait(&s1);
@@ -87,23 +87,23 @@ int main(int argc, char **argv)
     if (p2 == 0)
     {
         info(BEGIN, 2, 0);
-
-
+        
+        
 
         p3 = fork();
         if (p3 == 0)
         {
             info(BEGIN, 3, 0);
             for (int i = 0; i < 6; i++)
-            {
-                no3[i].process_no = 3;
-                no3[i].thread_no = i + 1;
-                pthread_create(&arr3[i], NULL, t_func3, &no3[i]);
-            }
-            for (int i = 0; i < 6; i++)
-            {
-                pthread_join(arr3[i], NULL);
-            }
+                {
+                    no3[i].process_no = 3;
+                    no3[i].thread_no = i + 1;
+                    pthread_create(&arr3[i], NULL, t_func3, &no3[i]);
+                }
+                for (int i = 0; i < 6; i++)
+                {
+                    pthread_join(arr3[i], NULL);
+                }
             p4 = fork();
             if (p4 == 0)
             {
