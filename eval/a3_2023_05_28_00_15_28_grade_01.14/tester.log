@@ -1,0 +1,70 @@
+[1;35mTesting ping...[0m
+[TESTER] received string 'HELLO'
+[TESTER] sending string 'PING'
+Test score: 1 / 10
+[1;35mTesting shm1...[0m
+[TESTER] received string 'HELLO'
+[TESTER] sending string 'CREATE_SHM'
+Test score: 1 / 10
+[1;35mTesting shm_write...[0m
+[TESTER] received string 'HELLO'
+[TESTER] sending string 'CREATE_SHM'
+Test score: 1 / 10
+[1;35mTesting map_inexistent...[0m
+[TESTER] received string 'HELLO'
+[TESTER] sending string 'MAP_FILE'
+Test score: 1 / 5
+[1;35mTesting map1...[0m
+[TESTER] received string 'HELLO'
+[TESTER] sending string 'MAP_FILE'
+Test score: 1 / 5
+[1;35mTesting read_offset...[0m
+[TESTER] received string 'HELLO'
+[TESTER] sending string 'CREATE_SHM'
+Test score: 1 / 10
+[1;35mTesting read_section...[0m
+[TESTER] received string 'HELLO'
+[TESTER] sending string 'CREATE_SHM'
+Test score: 1 / 10
+[1;35mTesting read_logical...[0m
+[TESTER] received string 'HELLO'
+[TESTER] sending string 'CREATE_SHM'
+Test score: 1 / 10
+
+Total score: 8 / 70
+Assignment grade: 11.43 / 100
+[1;35mTesting ping...[0m
+[TESTER] received string 'HELLO'
+[TESTER] sending string 'PING'
+Test score: 1 / 10
+[1;35mTesting shm1...[0m
+[TESTER] received string 'HELLO'
+[TESTER] sending string 'CREATE_SHM'
+Test score: 1 / 10
+[1;35mTesting shm_write...[0m
+[TESTER] received string 'HELLO'
+[TESTER] sending string 'CREATE_SHM'
+Test score: 1 / 10
+[1;35mTesting map_inexistent...[0m
+[TESTER] received string 'HELLO'
+[TESTER] sending string 'MAP_FILE'
+Test score: 1 / 5
+[1;35mTesting map1...[0m
+[TESTER] received string 'HELLO'
+[TESTER] sending string 'MAP_FILE'
+Test score: 1 / 5
+[1;35mTesting read_offset...[0m
+[TESTER] received string 'HELLO'
+[TESTER] sending string 'CREATE_SHM'
+Test score: 1 / 10
+[1;35mTesting read_section...[0m
+[TESTER] received string 'HELLO'
+[TESTER] sending string 'CREATE_SHM'
+Test score: 1 / 10
+[1;35mTesting read_logical...[0m
+[TESTER] received string 'HELLO'
+[TESTER] sending string 'CREATE_SHM'
+Test score: 1 / 10
+
+Total score: 8 / 70
+Assignment grade: 11.43 / 100
